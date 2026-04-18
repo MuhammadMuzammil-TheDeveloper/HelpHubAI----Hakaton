@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header class="navbar">
+
+  <div class="logo">
+    <div class="logo-icon">H</div>
+    <span>HelpHub AI</span>
+  </div>
+
+  <nav class="nav-links">
+    <a href="#">Dashboard</a>
+    <a href="#">Onboarding</a>
+    <a href="#">Create Request</a>
+  </nav>
+
+</header>
+
+<section class="request-section">
+    <div class="request-top-card">
+
+  <h2>Create Smart AI Request</h2>
+  <p>Describe your problem clearly and let AI improve your request for better results</p>
+
+</div>
+
+  <div class="request-container">
+
+    <!-- LEFT BOX (FORM) -->
+    <div class="request-left">
+
+      <h2>Create Request</h2>
+
+      <form>
+
+        <label>Title</label>
+        <input type="text" placeholder="Enter title">
+
+        <label>Description</label>
+        <textarea rows="4" placeholder="Enter description"></textarea>
+
+        <div class="row">
+          <div>
+            <label>Tags</label>
+            <input type="text" placeholder="Enter tags">
+          </div>
+
+          <div>
+            <label>Category</label>
+            <select>
+              <option>Web Development</option>
+              <option>AI</option>
+              <option>Design</option>
+            </select>
+          </div>
+        </div>
+
+        <label>Urgency</label>
+        <select>
+          <option>Low</option>
+          <option>Medium</option>
+          <option>High</option>
+        </select>
+
+        <div class="btn-row">
+          <button class="btn-outline" type="button">Apply AI Suggestion</button>
+          <button class="btn-primary" type="submit">Publish Request</button>
+        </div>
+
+      </form>
+
+    </div>
+
+    <!-- RIGHT BOX (AI ASSISTANT) -->
+    <div class="request-right">
+
+      <h6>AI ASSISTANT</h6>
+
+      <h2>Smart Request Guidance</h2>
+
+      <div class="ai-row">
+        <span>Suggested Category</span>
+        <span>Community</span>
+      </div>
+
+      <div class="ai-row">
+        <span>Detected Urgency</span>
+        <span>Low</span>
+      </div>
+
+      <div class="ai-row">
+        <span>Suggested Tags</span>
+        <span>Add more details for smarter tags</span>
+      </div>
+
+      <div class="ai-row">
+        <span>Rewrite Suggestion</span>
+        <span>Start describing the challenge to generate a stronger version</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</body>
+</html>

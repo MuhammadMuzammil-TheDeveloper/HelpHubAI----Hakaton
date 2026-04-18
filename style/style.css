@@ -1343,3 +1343,180 @@ border-radius:20px;
 cursor:pointer;
 font-weight:bold;
 }
+
+
+
+
+
+
+/* SECTION */
+
+.request-section{
+padding:60px 20px;
+background:#f6f9f7;
+}
+
+.request-container{
+display:flex;
+gap:20px;
+max-width:1100px;
+margin:auto;
+}
+
+/* LEFT BOX */
+
+.request-left{
+flex:1;
+background:white;
+padding:30px;
+border-radius:16px;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.request-left h2{
+margin-bottom:20px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+label{
+font-weight:500;
+font-size:14px;
+}
+
+input, textarea, select{
+padding:10px;
+border:1px solid #ddd;
+border-radius:8px;
+width:100%;
+}
+
+/* ROW */
+
+.row{
+display:flex;
+gap:10px;
+}
+
+.row div{
+flex:1;
+display:flex;
+flex-direction:column;
+gap:6px;
+}
+
+/* BUTTONS */
+
+.btn-row{
+display:flex;
+gap:10px;
+margin-top:10px;
+}
+
+.btn-outline{
+flex:1;
+background:white;
+border:1px solid #ddd;
+padding:10px;
+border-radius:20px;
+cursor:pointer;
+color:black;
+}
+
+.btn-primary{
+flex:1;
+background:#16a34a;
+border:none;
+padding:10px;
+border-radius:20px;
+cursor:pointer;
+color:white;
+font-weight:bold;
+}
+
+/* RIGHT BOX */
+
+.request-right{
+flex:1;
+background:white;
+padding:30px;
+border-radius:16px;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.request-right h6{
+color:#16a34a;
+font-weight:bold;
+}
+
+.request-right h2{
+margin:10px 0 20px;
+}
+
+/* AI ROWS */
+
+.ai-row{
+display:flex;
+justify-content:space-between;
+padding:12px 0;
+border-bottom:1px solid #eee;
+font-size:14px;
+}
+
+@media (max-width:900px){
+
+.request-container{
+flex-direction:column;
+}
+
+.row{
+flex-direction:column;
+}
+
+.btn-row{
+flex-direction:column;
+}
+
+}
+
+
+
+.request-top-card{
+max-width:1100px;
+margin:auto;
+background:#16a34a;
+color:white;
+
+padding:25px 30px;
+border-radius:16px;
+
+margin-bottom:20px;
+}
+
+.request-top-card h2{
+font-size:26px;
+font-weight:bold;
+margin-bottom:5px;
+}
+
+.request-top-card p{
+opacity:0.9;
+font-size:14px;
+}
+
+@media (max-width:900px){
+
+.request-top-card{
+padding:20px;
+text-align:left;
+}
+
+.request-top-card h2{
+font-size:20px;
+}
+
+}
