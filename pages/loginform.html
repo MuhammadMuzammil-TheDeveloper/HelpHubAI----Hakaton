@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header class="navbar">
+
+  <div class="logo">
+    <div class="logo-icon">H</div>
+    <span>HelpHub AI</span>
+  </div>
+
+  <nav class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Explore</a>
+    <a href="#">Leaderboard</a>
+    <a href="#">AI Center</a>
+  </nav>
+
+</header>
+
+<section class="auth-section">
+
+  <div class="auth-container">
+
+    <!-- LEFT BOX -->
+    <div class="auth-left">
+
+      <h6>WELCOME TO HELP HUB AI</h6>
+
+      <h1>Connect. Learn. Grow with AI Powered Community</h1>
+
+      <p>
+        HelpHub AI is a smart ecosystem where students, mentors, and builders
+        connect instantly. Get help faster, share knowledge, and track your impact
+        in real time using AI driven matching.
+      </p>
+
+      <ul>
+        <li>AI powered smart matching system</li>
+        <li>Real-time community support</li>
+        <li>Track your contribution score</li>
+      </ul>
+
+    </div>
+
+    <!-- RIGHT BOX (FORM) -->
+    <div class="auth-right">
+
+      <h6 class="auth-title">LOGIN / SIGNUP</h6>
+
+      <h2>Access Your Dashboard</h2>
+
+      <form id="authForm">
+
+        <label>Select Demo User</label>
+        <input type="text" id="username" placeholder="Enter username" required>
+
+        <label>Role Selection</label>
+        <select id="role" required>
+          <option value="">Select Role</option>
+          <option value="student">Student</option>
+          <option value="mentor">Mentor</option>
+          <option value="admin">Admin</option>
+        </select>
+
+        <div class="row">
+          <div>
+            <label>Email</label>
+            <input type="email" id="email" required>
+          </div>
+
+          <div>
+            <label>Password</label>
+            <input type="password" id="password" required>
+          </div>
+        </div>
+
+        <button type="submit">Continue to Dashboard</button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+    
+</body>
+<script src="../script/app.js"></script>
+</html>
