@@ -1790,3 +1790,101 @@ flex-direction:column;
 }
 
 }
+
+
+
+
+
+
+/* TOP GREEN BOX */
+
+.notif-top{
+background:#16a34a;
+color:white;
+padding:30px;
+margin:30px auto;
+max-width:1100px;
+border-radius:16px;
+}
+
+.notif-top h6{
+opacity:0.9;
+}
+
+.notif-top h1{
+font-size:28px;
+margin:10px 0;
+}
+
+/* SECTION */
+
+.notif-section{
+padding:40px 20px;
+}
+
+.notif-container{
+max-width:1100px;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:16px;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.green{
+color:#16a34a;
+font-weight:bold;
+}
+
+.notif-container h2{
+margin:10px 0 20px;
+}
+
+/* NOTIFICATION CARD */
+
+.notif-card{
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:15px;
+border:1px solid #eee;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+.notif-card .left h4{
+font-weight:bold;
+color:#111;
+}
+
+.notif-card .left p{
+font-size:12px;
+color:#666;
+margin-top:5px;
+}
+
+/* BUTTON */
+
+.notif-card button{
+background:white;
+border:1px solid #ddd;
+padding:6px 12px;
+border-radius:20px;
+cursor:pointer;
+color:black;
+}
+
+@media (max-width:900px){
+
+.notif-top{
+text-align:left;
+}
+
+.notif-card{
+flex-direction:column;
+align-items:flex-start;
+gap:10px;
+}
+
+}
