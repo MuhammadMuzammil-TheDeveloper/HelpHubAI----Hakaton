@@ -1,0 +1,357 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f5f7f9;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:16px 60px;
+background:white;
+border-bottom:1px solid #eee;
+}
+
+/* LEFT SECTION */
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:600;
+font-size:18px;
+}
+
+/* H Icon */
+
+.logo-icon{
+width:36px;
+height:36px;
+background:#16a34a;
+border-radius:8px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+color:white;
+font-weight:bold;
+font-size:18px;
+}
+
+/* CENTER NAV */
+
+.nav-links{
+display:flex;
+gap:32px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#444;
+font-size:15px;
+font-weight:500;
+
+padding:8px 14px;
+border-radius:20px;
+border:1px solid transparent;
+
+transition:all 0.3s ease;
+}
+
+.nav-links a:hover{
+color:#174a2a;
+border:1px solid #98eeb8;
+background:#98eeb8;
+}
+
+
+
+/* RIGHT BUTTONS */
+
+.nav-buttons{
+display:flex;
+gap:12px;
+}
+
+.btn-outline{
+padding:10px 16px;
+border:1px solid #ddd;
+background:white;
+border-radius:20px;
+cursor:pointer;
+font-size:14px;
+}
+
+.btn-primary{
+padding:10px 16px;
+border:none;
+
+background:#16a34a;
+color:white;
+border-radius: 20px;
+cursor:pointer;
+font-size:14px;
+}
+
+
+/* HERO SEction */
+
+.hero{
+display:flex;
+justify-content:center;
+padding:80px 20px;
+background:#f6f9f7;
+}
+
+.hero-container{
+display:flex;
+gap:30px;
+max-width:1100px;
+width:100%;
+}
+
+/* LEFT BOX */
+
+.hero-left{
+background:white;
+padding:40px;
+border-radius:16px;
+flex:1;
+}
+
+.hero-left h1{
+font-size:44px;
+margin-bottom:15px;
+}
+.hero-left h6{
+color: #16a34a;
+}
+
+.hero-left p{
+color:#555;
+margin-bottom:20px;
+}
+
+.hero-buttons{
+display:flex;
+gap:10px;
+margin-bottom:30px;
+}
+
+.btn-outline{
+padding:10px 16px;
+border:1px solid #ccc;
+background:white;
+border-radius:20px;
+font-weight: bold;
+cursor:pointer;
+}
+
+.btn-primary{
+padding:10px 16px;
+border:none;
+background:#16a34a;
+font-weight: bold;
+
+color:white;
+border-radius:20px;
+cursor:pointer;
+}
+
+/* STATS */
+
+.stats{
+display:flex;
+gap:20px;
+}
+
+.stat-box{
+flex:1;
+/* border-left:3px solid #16a34a; */
+padding:20px;
+border-radius: 20px;
+width: 200px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.stat-label{
+color:#16a34a;
+font-weight: bold;
+font-size:13px;
+}
+
+.stat-box h2{
+font-size:26px;
+margin:5px 0;
+line-height: 60px;
+}
+
+/* RIGHT BOX */
+
+.hero-right{
+background:#0f3d2e;
+color:white;
+padding:40px;
+border-radius:16px;
+flex:1;
+position:relative;
+}
+
+
+/* Yellow Bubble */
+
+.yellow-bubble{
+position:absolute;
+top:15px;
+right:20px;
+
+width:70px;
+height:70px;
+
+background:#efc51c;
+border-radius:50%;
+
+box-shadow:0 0 10px rgba(150, 123, 15, 0.7);
+}
+.hero-right h2{
+    font-size: 42px;
+}
+.hero-right p{
+margin:15px 0 25px;
+color:#ebfaf3;
+
+}
+
+.insights{
+display:flex;
+flex-direction:column;
+gap:15px;
+
+}
+
+.insight-box{
+background:whitesmoke;
+color:black;
+padding:15px;
+border-radius:10px;
+}
+
+.insight-box h4{
+margin-bottom:6px;
+}
+.insight-box p{
+    color: black;
+}
+
+/* RESPONSIVE */
+
+/* NAVBAR RESPONSIVE */
+
+@media (max-width:900px){
+
+.navbar{
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+padding:16px 20px;
+}
+
+/* Hide center nav */
+
+.nav-links{
+display:none;
+}
+
+/* Buttons take full width */
+
+.nav-buttons{
+width:100%;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.nav-buttons button{
+width:100%;
+}
+
+}
+
+
+/* ===== TABLET RESPONSIVE ===== */
+
+@media (max-width:1024px){
+
+.hero-container{
+flex-direction:column;
+}
+
+.hero-left,
+.hero-right{
+width:100%;
+}
+
+.stats{
+flex-wrap:wrap;
+}
+
+.stat-box{
+flex:1 1 30%;
+}
+
+}
+
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width:768px){
+
+.hero{
+padding:40px 15px;
+}
+
+.hero-left,
+.hero-right{
+padding:25px;
+}
+
+.hero-left h1{
+font-size:24px;
+}
+
+.hero-right h2{
+font-size:22px;
+}
+
+.hero-buttons{
+flex-direction:column;
+}
+
+.hero-buttons button{
+width:100%;
+}
+
+.stats{
+flex-direction:column;
+gap:15px;
+}
+
+.stat-box{
+border-left:3px solid #16a34a;
+}
+
+.insights{
+gap:12px;
+}
+
+}
